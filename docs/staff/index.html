@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MiniJoshua: Docs</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="MiniJoshua Documentation" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome JS-->
+    <script defer src="/assets/fontawesome/js/all.min.js"></script>
+
+    <!-- PACE Loading -->
+    <script src="/assets/js/pace.js"></script>
+    <link rel="stylesheet" href="/assets/css/extra.css" />
+
+    <!-- Plugins CSS -->
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css"
+    />
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="/assets/css/theme.css" />
+  </head>
+
+  <body class="docs-page">
+    <header class="header fixed-top">
+      <div class="branding docs-branding">
+        <div class="container-fluid position-relative py-2">
+          <div class="docs-logo-wrapper">
+            <button
+              id="docs-sidebar-toggler"
+              class="docs-sidebar-toggler docs-sidebar-visible mr-2 d-xl-none"
+              type="button"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="site-logo">
+              <a class="navbar-brand" href="/"
+                ><img
+                  class="logo-icon mr-2"
+                  src="/assets/images/minijoshua-logo-64x64.png"
+                  alt="logo"
+                  width="50px"
+                  height="50px"
+                /><span class="logo-text"
+                  >Mini<span class="text-alt">Joshua</span></span
+                ></a
+              >
+            </div>
+          </div>
+          <!--//docs-logo-wrapper-->
+          <div
+            class="docs-top-utilities d-flex justify-content-end align-items-center"
+          >
+            <ul
+              class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex"
+            >
+              <li class="list-inline-item">
+                <a href="https://github.com/JoshuaLovesCode/MiniJoshua"
+                  ><i class="fab fa-github fa-fw"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://twitter.com/MiniJoshuaBot"
+                  ><i class="fab fa-twitter fa-fw"></i
+                ></a>
+              </li>
+            </ul>
+            <!--//social-list-->
+            <a href="#ComingSoon!" class="btn btn-primary d-none d-lg-flex"
+              >Invite Coming Soon</a
+            >
+          </div>
+          <!--//docs-top-utilities-->
+        </div>
+        <!--//container-->
+      </div>
+      <!--//branding-->
+    </header>
+    <!--//header-->
+
+    <div class="docs-wrapper">
+      <div id="docs-sidebar" class="docs-sidebar">
+        <div class="top-search-box d-lg-none p-3">
+          <form class="search-form">
+            <input
+              type="text"
+              placeholder="Search the docs..."
+              name="search"
+              class="form-control search-input"
+            />
+            <button type="submit" class="btn search-btn" value="Search">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+        <nav id="docs-nav" class="docs-nav navbar">
+          <ul class="section-items list-unstyled nav flex-column pb-3">
+            <li class="nav-item section-title mt-3">
+              <a class="nav-link scrollto" href="#section-2"
+                ><span class="theme-icon-holder mr-2"
+                  ><i class="fas fa-tools"></i></span
+                >Commands</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-2-1"
+                >Moderation Commands</a
+              >
+              <a class="nav-link scrollto" href="#item-2-2"
+                >Management Commands</a
+              >
+              <a class="nav-link scrollto" href="#item-2-3"
+                >Developer Commands</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!--//docs-nav-->
+      </div>
+      <!--//docs-sidebar-->
+      <div class="docs-content">
+        <div class="container">
+          <article class="docs-article" id="section-2">
+            <header class="docs-header">
+              <h1 class="docs-heading">Commands</h1>
+              <section class="docs-intro">
+                <p>
+                  <strong>Mini</strong>Joshua's Commands. You do not need to
+                  mention a user when using these commands.
+                </p>
+                <p>(): Required</p>
+                <p>[] : Optional</p>
+              </section>
+              <!--//docs-intro-->
+            </header>
+            <section class="docs-section" id="item-2-1">
+              <h2 class="section-heading">Moderation Commands</h2>
+              <div class="table-responsive my-4">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Command</th>
+                      <th scope="col">Usage</th>
+                      <th scope="col">Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">warn</th>
+                      <td>!!warn &lt;user&gt; &lt;reason&gt;</td>
+                      <td>
+                        DM's the user the warning provided by the punisher
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">kick</th>
+                      <td>!!kick &lt;user&gt; &lt;reason&gt;</td>
+                      <td>
+                        Removes a user from the server for misconduct.
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">ban</th>
+                      <td>!!ban &lt;user&gt; &lt;reason&gt;</td>
+                      <td>
+                        Banishes a user from the server for misconduct.
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">unban</th>
+                      <td>!!unban &lt;user&gt; &lt;reason&gt;</td>
+                      <td>
+                        Un-banishes a user from the server.
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">mute</th>
+                      <td>
+                        !!mute &lt;user&gt; &lt;time (s/m/h/d/m/y)&gt;
+                        &lt;reason&gt;
+                      </td>
+                      <td>
+                        Prevents the user from speaking for the amount of time
+                        given.
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">unmute</th>
+                      <td>
+                        !!unmute &lt;user&gt; &lt;reason&gt;
+                      </td>
+                      <td>
+                        Grants a user permission to speak.
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">react</th>
+                      <td>
+                        !!react &lt;emoji/emoji id&gt;
+                      </td>
+                      <td>
+                        Make the bot react to the previous message. (Custom
+                        Emjoi need IDs)
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--//table-responsive-->
+            </section>
+            <!--//section-->
+            <section class="docs-section" id="item-2-2">
+              <h2 class="section-heading">Management Commands</h2>
+              <p>
+                To create a ticket, react to the message in #tickets on discord.
+              </p>
+              <div class="table-responsive my-4">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Command</th>
+                      <th scope="col">Usage</th>
+                      <th scope="col">Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">addtrigger</th>
+                      <td>!!addtrigger &lt;type&gt; &lt;trigger&gt;</td>
+                      <td>Adds a message trigger</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">remtrigger</th>
+                      <td>!!remtrigger &lt;type&gt; &lt;trigger&gt;</td>
+                      <td>Removes a message trigger</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">announce</th>
+                      <td>
+                        !!announce "&lt;Title&gt;" "&lt;Description&gt;"
+                        "&lt;Type&gt;" "&lt;Ping True (D)/Fase&gt;"
+                      </td>
+                      <td>
+                        Announces a mesage. (ALL ARGUMENTS NEED TO BE SURROUNDED
+                        BY <strong>""</strong>)
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">embed</th>
+                      <td>
+                        !!embed "&lt;Title&gt;" "&lt;Description&gt;"
+                      </td>
+                      <td>
+                        Creates an embed. (ALL ARGUMENTS NEED TO BE SURROUNDED
+                        BY <strong>""</strong>)
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">giveaway</th>
+                      <td>
+                        !!giveaway &lt;start|end&gt; &lt;amount of
+                        winners|id&gt; &lt;prize&gt;
+                      </td>
+                      <td>
+                        Ends/starts a giveaway
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">whitelist</th>
+                      <td>
+                        !!whitelist &lt;add|remove&gt; &lt;meme&gt;
+                        &lt;subreddit&gt;
+                      </td>
+                      <td>
+                        Whitelists/unwhitelists a subreddit for !!meme
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--//table-responsive-->
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-2-3">
+              <h2 class="section-heading">Developer Commands</h2>
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">Command</th>
+                    <th scope="col">Usage</th>
+                    <th scope="col">Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">eval</th>
+                    <td>!!eval &lt;javascript&gt;</td>
+                    <td>Evaluates some JavaScript.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">setactivity</th>
+                    <td>
+                      !!setactivity &lt;PLAYING|LISTENING|STREAMING|WATCHING&gt;
+                      &lt;time&gt; &lt;activity&gt;
+                    </td>
+                    <td>Sets the bot's presence.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">setstatus</th>
+                    <td>!!setstatus &lt;ONLINE|IDLE|DND|INVISIBLE&gt</td>
+                    <td>Sets the bot's status.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+            <!--//section-->
+          </article>
+          <!--//docs-article-->
+
+          <footer class="footer">
+            <div class="container text-center py-5">
+              <small
+                >Copyright &copy; 2020 | Joshua Sing, Myles Newton, Isaiah
+                Swaim, Marek Vospěl | All rights reserved</small
+              ><br />
+              <small
+                >We are not affiliated, associated, authorized, endorsed by, or
+                in any way officially connected Discord Inc.</small
+              ><br /><br />
+              <small class="copyright" style="font-size: 10px;"
+                >Website Designed with
+                <i class="fas fa-heart" style="color: #fb866a;"></i> by
+                <a
+                  class="theme-link"
+                  href="http://themes.3rdwavemedia.com"
+                  target="_blank"
+                  >Xiaoying Riley</a
+                >
+                for developers</small
+              >
+              <ul class="social-list list-unstyled pt-4 mb-0">
+                <li class="list-inline-item">
+                  <a href="https://github.com/JoshuaLovesCode/MiniJoshua"
+                    ><i class="fab fa-github fa-fw"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://twitter.com/MiniJoshuaBot"
+                    ><i class="fab fa-twitter fa-fw"></i
+                  ></a>
+                </li>
+              </ul>
+              <!--//social-list-->
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <!--//docs-wrapper-->
+
+    <!-- Javascript -->
+    <script src="/assets/plugins/jquery-3.4.1.min.js"></script>
+    <script src="/assets/plugins/popper.min.js"></script>
+    <script src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Page Specific JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script src="/assets/js/highlight-custom.js"></script>
+    <script src="/assets/plugins/jquery.scrollTo.min.js"></script>
+    <script src="/assets/plugins/lightbox/dist/ekko-lightbox.min.js"></script>
+    <script src="/assets/js/docs.js"></script>
+  </body>
+</html>
