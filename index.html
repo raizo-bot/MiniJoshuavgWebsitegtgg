@@ -1,278 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>MiniJoshua: Home</title>
 
     <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="MiniJoshua Discord Bot Official Website.">
-    <link rel="shortcut icon" href="favicon.ico">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="MiniJoshua Discord Bot Official Website."
+    />
+    <link rel="shortcut icon" href="favicon.ico" />
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- FontAwesome JS-->
     <script defer src="assets/fontawesome/js/all.min.js"></script>
 
+    <!-- PACE Loading -->
+    <script src="assets/js/pace.js"></script>
+    <link rel="stylesheet" href="assets/css/extra.css" />
+
     <!-- Theme CSS -->
-    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header class="header fixed-top">
-        <div class="branding docs-branding">
-            <div class="container-fluid position-relative py-2">
-                <div class="docs-logo-wrapper">
-	                <div class="site-logo"><a class="navbar-brand" href="/"><img class="logo-icon mr-2" src="assets/images/minijoshua-logo-64x64.png" alt="logo" width="50px" height="50px"><span class="logo-text">Mini<span class="text-alt">Joshua</span></span></a></div>
-                </div><!--//docs-logo-wrapper-->
-	            <div class="docs-top-utilities d-flex justify-content-end align-items-center">
-
-					<ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
-						<li class="list-inline-item"><a href="https://github.com/JoshuaLovesCode/MiniJoshua"><i class="fab fa-github fa-fw"></i></a></li>
-			            <li class="list-inline-item"><a href="https://twitter.com/MiniJoshuaBot"><i class="fab fa-twitter fa-fw"></i></a></li>
-		            </ul><!--//social-list-->
-		            <a href="#ComingSoon!" class="btn btn-primary d-none d-lg-flex">Add to Discord</a>
-	            </div><!--//docs-top-utilities-->
-            </div><!--//container-->
-        </div><!--//branding-->
-    </header><!--//header-->
-
+      <div class="branding docs-branding">
+        <div class="container-fluid position-relative py-2">
+          <div class="docs-logo-wrapper">
+            <div class="site-logo">
+              <a class="navbar-brand" href="/"
+                ><img
+                  class="logo-icon mr-2"
+                  src="assets/images/minijoshua-logo-64x64.png"
+                  alt="logo"
+                  width="50px"
+                  height="50px"
+                /><span class="logo-text"
+                  >Mini<span class="text-alt">Joshua</span></span
+                ></a
+              >
+            </div>
+          </div>
+          <!--//docs-logo-wrapper-->
+          <div
+            class="docs-top-utilities d-flex justify-content-end align-items-center"
+          >
+            <ul
+              class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex"
+            >
+              <li class="list-inline-item">
+                <a href="https://github.com/JoshuaLovesCode/MiniJoshua"
+                  ><i class="fab fa-github fa-fw"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://twitter.com/MiniJoshuaBot"
+                  ><i class="fab fa-twitter fa-fw"></i
+                ></a>
+              </li>
+            </ul>
+            <!--//social-list-->
+            <a href="#ComingSoon!" class="btn btn-primary d-none d-lg-flex"
+              >Invite Coming Soon</a
+            >
+          </div>
+          <!--//docs-top-utilities-->
+        </div>
+        <!--//container-->
+      </div>
+      <!--//branding-->
+    </header>
+    <!--//header-->
 
     <div class="page-header theme-bg-dark py-5 text-center position-relative">
-	    <div class="theme-bg-shapes-right"></div>
-	    <div class="theme-bg-shapes-left"></div>
-	    <div class="container">
-		    <h1 class="page-heading single-col-max mx-auto"><strong>Mini</strong>Joshua</h1>
-		    <div class="page-intro single-col-max mx-auto">A Discord Bot That Helps <span id="target"></span></div>
-	    </div>
-    </div><!--//page-header-->
+      <div class="theme-bg-shapes-right"></div>
+      <div class="theme-bg-shapes-left"></div>
+      <div class="container">
+        <h1 class="page-heading single-col-max mx-auto">
+          <strong>Mini</strong>Joshua
+        </h1>
+        <div class="page-intro single-col-max mx-auto">
+          A Discord Bot That <span id="target"></span>
+        </div>
+      </div>
+    </div>
+    <!--//page-header-->
     <div class="page-content">
-	    <div class="container">
-		    <div class="docs-overview py-5">
-			    <div class="row justify-content-center">
-				    <div class="col-12 col-lg-4 py-3">
-					    <div class="card shadow-sm">
-						    <div class="card-body">
-							    <h5 class="card-title mb-3">
-								    <span class="theme-icon-holder card-icon-holder mr-2">
-								        <i class="fas fa-map-signs"></i>
-							        </span><!--//card-icon-holder-->
-							        <span class="card-title-text">Getting Started</span>
-							    </h5>
-							    <div class="card-text">
-								    Getting Started with <strong>Mini</strong>Joshua.
-							    </div>
-							    <a class="card-link-mask" href="/docs/#section-1"></a>
-						    </div><!--//card-body-->
-					    </div><!--//card-->
-				    </div><!--//col-->
-				    <div class="col-12 col-lg-4 py-3">
-					    <div class="card shadow-sm">
-						    <div class="card-body">
-							    <h5 class="card-title mb-3">
-								    <span class="theme-icon-holder card-icon-holder mr-2">
-								        <i class="fas fa-tools"></i>
-							        </span><!--//card-icon-holder-->
-							        <span class="card-title-text">Commands</span>
-							    </h5>
-							    <div class="card-text">
-								    <strong>Mini</strong>Joshua's commands and command usage.
-							    </div>
-							    <a class="card-link-mask" href="/docs/#section-2"></a>
-						    </div><!--//card-body-->
-					    </div><!--//card-->
-				    </div><!--//col-->
-				    <div class="col-12 col-lg-4 py-3">
-					    <div class="card shadow-sm">
-						    <div class="card-body">
-							    <h5 class="card-title mb-3">
-								    <span class="theme-icon-holder card-icon-holder mr-2">
-								        <i class="fas fa-box fa-heart"></i>
-							        </span><!--//card-icon-holder-->
-							        <span class="card-title-text">Credits</span>
-							    </h5>
-							    <div class="card-text">
-								    <strong>Mini</strong>Joshua's Lead Developers, Contributors and everyone else that has helped.
-								</div>
-							    <a class="card-link-mask" href="/docs/#section-3"></a>
-						    </div><!--//card-body-->
-					    </div><!--//card-->
-				    </div><!--//col-->
-				    <div class="col-12 col-lg-4 py-3">
-					    <div class="card shadow-sm">
-						    <div class="card-body">
-							    <h5 class="card-title mb-3">
-								    <span class="theme-icon-holder card-icon-holder mr-2">
-								        <i class="fab fa-twitter fa-fw"></i>
-							        </span><!--//card-icon-holder-->
-							        <span class="card-title-text">Twitter</span>
-							    </h5>
-							    <div class="card-text">
-								    Keep up to date on the latest <strong>Mini</strong>Joshua updates on our Twitter Page!
-								</div>
-							    <a class="card-link-mask" href="https://twitter.com/MiniJoshuaBot"></a>
-						    </div><!--//card-body-->
-					    </div><!--//card-->
-				    </div><!--//col-->
-				    <div class="col-12 col-lg-4 py-3">
-					    <div class="card shadow-sm">
-						    <div class="card-body">
-							    <h5 class="card-title mb-3">
-								    <span class="theme-icon-holder card-icon-holder mr-2">
-								        <i class="fab fa-discord"></i>
-							        </span><!--//card-icon-holder-->
-							        <span class="card-title-text">Support Discord</span>
-							    </h5>
-							    <div class="card-text">
-								    Join JoshuaLovesCode's Official Support discord to receive support for <strong>Mini</strong>Joshua.
-								</div>
-							    <a class="card-link-mask" href="https://discord.joshualovescode.dev"></a>
-						    </div><!--//card-body-->
-					    </div><!--//card-->
-				    </div><!--//col-->
-			    </div><!--//row-->
-		    </div><!--//container-->
-		</div><!--//container-->
-    </div><!--//page-content-->
+      <div class="container">
+        <div class="docs-overview py-5">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-4 py-3">
+              <div class="card shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">
+                    <span class="theme-icon-holder card-icon-holder mr-2">
+                      <i class="fas fa-map-signs"></i>
+                    </span>
+                    <!--//card-icon-holder-->
+                    <span class="card-title-text">Getting Started</span>
+                  </h5>
+                  <div class="card-text">
+                    Getting Started with <strong>Mini</strong>Joshua.
+                  </div>
+                  <a class="card-link-mask" href="/docs/#section-1"></a>
+                </div>
+                <!--//card-body-->
+              </div>
+              <!--//card-->
+            </div>
+            <!--//col-->
+            <div class="col-12 col-lg-4 py-3">
+              <div class="card shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">
+                    <span class="theme-icon-holder card-icon-holder mr-2">
+                      <i class="fas fa-tools"></i>
+                    </span>
+                    <!--//card-icon-holder-->
+                    <span class="card-title-text">Commands</span>
+                  </h5>
+                  <div class="card-text">
+                    <strong>Mini</strong>Joshua's commands and command usage.
+                  </div>
+                  <a class="card-link-mask" href="/docs/#section-2"></a>
+                </div>
+                <!--//card-body-->
+              </div>
+              <!--//card-->
+            </div>
+            <!--//col-->
+            <div class="col-12 col-lg-4 py-3">
+              <div class="card shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">
+                    <span class="theme-icon-holder card-icon-holder mr-2">
+                      <i class="fas fa-box fa-heart"></i>
+                    </span>
+                    <!--//card-icon-holder-->
+                    <span class="card-title-text">Credits</span>
+                  </h5>
+                  <div class="card-text">
+                    <strong>Mini</strong>Joshua's Lead Developers, Contributors
+                    and everyone else that has helped.
+                  </div>
+                  <a class="card-link-mask" href="/docs/#section-3"></a>
+                </div>
+                <!--//card-body-->
+              </div>
+              <!--//card-->
+            </div>
+            <!--//col-->
+            <div class="col-12 col-lg-4 py-3">
+              <div class="card shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">
+                    <span class="theme-icon-holder card-icon-holder mr-2">
+                      <i class="fab fa-twitter fa-fw"></i>
+                    </span>
+                    <!--//card-icon-holder-->
+                    <span class="card-title-text">Twitter</span>
+                  </h5>
+                  <div class="card-text">
+                    Keep up to date on the latest <strong>Mini</strong>Joshua
+                    updates on our Twitter Page!
+                  </div>
+                  <a
+                    class="card-link-mask"
+                    href="https://twitter.com/MiniJoshuaBot"
+                  ></a>
+                </div>
+                <!--//card-body-->
+              </div>
+              <!--//card-->
+            </div>
+            <!--//col-->
+            <div class="col-12 col-lg-4 py-3">
+              <div class="card shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">
+                    <span class="theme-icon-holder card-icon-holder mr-2">
+                      <i class="fab fa-discord"></i>
+                    </span>
+                    <!--//card-icon-holder-->
+                    <span class="card-title-text">Support Discord</span>
+                  </h5>
+                  <div class="card-text">
+                    Join JoshuaLovesCode's Official Support discord to receive
+                    support for <strong>Mini</strong>Joshua.
+                  </div>
+                  <a
+                    class="card-link-mask"
+                    href="https://discord.joshualovescode.dev"
+                  ></a>
+                </div>
+                <!--//card-body-->
+              </div>
+              <!--//card-->
+            </div>
+            <!--//col-->
+          </div>
+          <!--//row-->
+        </div>
+        <!--//container-->
+      </div>
+      <!--//container-->
+    </div>
+    <!--//page-content-->
 
-    <section class="cta-section text-center py-5 theme-bg-dark position-relative">
-	    <div class="theme-bg-shapes-right"></div>
-	    <div class="theme-bg-shapes-left"></div>
-	    <div class="container">
-		    <h3 class="mb-2 text-white mb-3">Make your discord server professional today!</h3>
-		    <div class="section-intro text-white mb-3 single-col-max mx-auto">It's so simple! Just invite, Setup and Go! Start today!</div>
-		    <div class="pt-3 text-center">
-			    <a class="btn btn-light" href="#ComingSoon!">Add to Discord<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
-		    </div>
-	    </div>
-    </section><!--//cta-section-->
-
-
+    <section
+      class="cta-section text-center py-5 theme-bg-dark position-relative"
+    >
+      <div class="theme-bg-shapes-right"></div>
+      <div class="theme-bg-shapes-left"></div>
+      <div class="container">
+        <h3 class="mb-2 text-white mb-3">
+          Make your discord server professional today!
+        </h3>
+        <div class="section-intro text-white mb-3 single-col-max mx-auto">
+          It's so simple! Just invite, Setup and Go! Start today!
+        </div>
+        <div class="pt-3 text-center">
+          <a class="btn btn-light" href="#ComingSoon!"
+            >Invite Coming Soon<i class="fas fa-arrow-alt-circle-right ml-2"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <!--//cta-section-->
 
     <footer class="footer">
+      <div class="footer-bottom text-center py-5">
+        <ul class="social-list list-unstyled pb-4 mb-0">
+          <li class="list-inline-item">
+            <a href="https://github.com/JoshuaLovesCode/MiniJoshua"
+              ><i class="fab fa-github fa-fw"></i
+            ></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://twitter.com/MiniJoshuaBot"
+              ><i class="fab fa-twitter fa-fw"></i
+            ></a>
+          </li>
+        </ul>
+        <!--//social-list-->
 
-	    <div class="footer-bottom text-center py-5">
-
-		    <ul class="social-list list-unstyled pb-4 mb-0">
-			    <li class="list-inline-item"><a href="https://github.com/JoshuaLovesCode/MiniJoshua"><i class="fab fa-github fa-fw"></i></a></li>
-	            <li class="list-inline-item"><a href="https://twitter.com/MiniJoshuaBot"><i class="fab fa-twitter fa-fw"></i></a></li>
-	        </ul><!--//social-list-->
-
-	          <small style="font-size: 15px;">MiniJoshua - Copyright 2019 Joshua Sing | All rights reserved</small><br>
-            <small>MiniJoshua is a trademark of Joshua Sing. | We are not in any way affiliated with Discord.</small><br><br>
-            <small class="copyright" style="font-size: 10px;">Website Designed with <i class="fas fa-heart" style="color: #fb866a;"></i> by <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
-
-
-	    </div>
-
+        <small
+          >Copyright &copy; 2020 | Joshua Sing, Myles Newton, Isaiah Swaim,
+          Marek Vospěl | All rights reserved</small
+        ><br />
+        <small
+          >We are not affiliated, associated, authorized, endorsed by, or in any
+          way officially connected Discord Inc.</small
+        ><br /><br />
+        <small class="copyright" style="font-size: 10px;"
+          >Website Designed with
+          <i class="fas fa-heart" style="color: #fb866a;"></i> by
+          <a
+            class="theme-link"
+            href="http://themes.3rdwavemedia.com"
+            target="_blank"
+            >Xiaoying Riley</a
+          >
+          for developers</small
+        >
+      </div>
     </footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script>
-    (function ($) {
-      // writes the string
-      //
-      // @param jQuery $target
-      // @param String str
-      // @param Numeric cursor
-      // @param Numeric delay
-      // @param Function cb
-      // @return void
-      function typeString($target, str, cursor, delay, cb) {
-        $target.html(function (_, html) {
-          return html + str[cursor];
-        });
-
-        if (cursor < str.length - 1) {
-          setTimeout(function () {
-            typeString($target, str, cursor + 1, delay, cb);
-          }, delay);
-        }
-        else {
-          cb();
-        }
-      }
-
-      // clears the string
-      //
-      // @param jQuery $target
-      // @param Numeric delay
-      // @param Function cb
-      // @return void
-      function deleteString($target, delay, cb) {
-        var length;
-
-        $target.html(function (_, html) {
-          length = html.length;
-          return html.substr(0, length - 1);
-        });
-
-        if (length > 1) {
-          setTimeout(function () {
-            deleteString($target, delay, cb);
-          }, delay);
-        }
-        else {
-          cb();
-        }
-      }
-
-      // jQuery hook
-      $.fn.extend({
-        teletype: function (opts) {
-          var settings = $.extend({}, $.teletype.defaults, opts);
-
-          return $(this).each(function () {
-            (function loop($tar, idx) {
-              // type
-              typeString($tar, settings.text[idx], 0, settings.delay, function () {
-                // delete
-                setTimeout(function () {
-                  deleteString($tar, settings.delay, function () {
-                    loop($tar, (idx + 1) % settings.text.length);
-                  });
-                }, settings.pause);
-              });
-
-            }($(this), 0));
+      (function ($) {
+        // writes the string
+        //
+        // @param jQuery $target
+        // @param String str
+        // @param Numeric cursor
+        // @param Numeric delay
+        // @param Function cb
+        // @return void
+        function typeString($target, str, cursor, delay, cb) {
+          $target.html(function (_, html) {
+            return html + str[cursor];
           });
-        }
-      });
 
-      // plugin defaults
-      $.extend({
-        teletype: {
-          defaults: {
-            delay: 100,
-            pause: 5000,
-            text: []
+          if (cursor < str.length - 1) {
+            setTimeout(function () {
+              typeString($target, str, cursor + 1, delay, cb);
+            }, delay);
+          } else {
+            cb();
           }
         }
+
+        // clears the string
+        //
+        // @param jQuery $target
+        // @param Numeric delay
+        // @param Function cb
+        // @return void
+        function deleteString($target, delay, cb) {
+          var length;
+
+          $target.html(function (_, html) {
+            length = html.length;
+            return html.substr(0, length - 1);
+          });
+
+          if (length > 1) {
+            setTimeout(function () {
+              deleteString($target, delay, cb);
+            }, delay);
+          } else {
+            cb();
+          }
+        }
+
+        // jQuery hook
+        $.fn.extend({
+          teletype: function (opts) {
+            var settings = $.extend({}, $.teletype.defaults, opts);
+
+            return $(this).each(function () {
+              (function loop($tar, idx) {
+                // type
+                typeString(
+                  $tar,
+                  settings.text[idx],
+                  0,
+                  settings.delay,
+                  function () {
+                    // delete
+                    setTimeout(function () {
+                      deleteString($tar, settings.delay, function () {
+                        loop($tar, (idx + 1) % settings.text.length);
+                      });
+                    }, settings.pause);
+                  }
+                );
+              })($(this), 0);
+            });
+          },
+        });
+
+        // plugin defaults
+        $.extend({
+          teletype: {
+            defaults: {
+              delay: 100,
+              pause: 5000,
+              text: [],
+            },
+          },
+        });
+      })(jQuery);
+
+      $('#target').teletype({
+        text: [
+          'Helps Moderate. ',
+          'Helps Everyone Have Fun. ',
+          'Helps Assign Roles. ',
+          'Helps With Everything. ',
+          'Works. ',
+          'Is made By Great Devs. ',
+        ],
       });
-    }(jQuery));
 
-    $('#target').teletype({
-      text: [
-        'Moderate. ',
-        'Everyone Have Fun. ',
-        'Assign Roles. ',
-        'With Everything. '
-      ]
-    });
-
-    $('#cursor').teletype({
-      text: ['|', ' '],
-      delay: 0,
-      pause: 500
-    });
+      $('#cursor').teletype({
+        text: ['|', ' '],
+        delay: 0,
+        pause: 500,
+      });
     </script>
 
     <!-- Javascript -->
     <script src="assets/plugins/jquery-3.4.1.min.js"></script>
     <script src="assets/plugins/popper.min.js"></script>
     <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-
-</body>
+  </body>
 </html>

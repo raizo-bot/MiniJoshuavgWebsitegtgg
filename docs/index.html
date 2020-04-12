@@ -1,203 +1,459 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>MiniJoshua: Docs</title>
 
     <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="description" content="MiniJoshua Documentation">
-    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="description" content="MiniJoshua Documentation" />
+    <link rel="shortcut icon" href="/favicon.ico" />
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- FontAwesome JS-->
     <script defer src="/assets/fontawesome/js/all.min.js"></script>
 
+    <!-- PACE Loading -->
+    <script src="/assets/js/pace.js"></script>
+    <link rel="stylesheet" href="/assets/css/extra.css" />
+
     <!-- Plugins CSS -->
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css"
+    />
 
     <!-- Theme CSS -->
-    <link id="theme-style" rel="stylesheet" href="/assets/css/theme.css">
+    <link id="theme-style" rel="stylesheet" href="/assets/css/theme.css" />
+  </head>
 
-</head>
-
-<body class="docs-page">
+  <body class="docs-page">
     <header class="header fixed-top">
-        <div class="branding docs-branding">
-            <div class="container-fluid position-relative py-2">
-                <div class="docs-logo-wrapper">
-					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible mr-2 d-xl-none" type="button">
-	                    <span></span>
-	                    <span></span>
-	                    <span></span>
-	                </button>
-	                <div class="site-logo"><a class="navbar-brand" href="/"><img class="logo-icon mr-2" src="/assets/images/minijoshua-logo-64x64.png" alt="logo" width="50px" height="50px"><span class="logo-text">Mini<span class="text-alt">Joshua</span></span></a></div>
-                </div><!--//docs-logo-wrapper-->
-	            <div class="docs-top-utilities d-flex justify-content-end align-items-center">
-
-					<ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
-						<li class="list-inline-item"><a href="https://github.com/JoshuaLovesCode/MiniJoshua"><i class="fab fa-github fa-fw"></i></a></li>
-			            <li class="list-inline-item"><a href="https://twitter.com/MiniJoshuaBot"><i class="fab fa-twitter fa-fw"></i></a></li>
-		            </ul><!--//social-list-->
-		            <a href="#ComingSoon!" class="btn btn-primary d-none d-lg-flex">Add to Discord</a>
-	            </div><!--//docs-top-utilities-->
-            </div><!--//container-->
-        </div><!--//branding-->
-    </header><!--//header-->
+      <div class="branding docs-branding">
+        <div class="container-fluid position-relative py-2">
+          <div class="docs-logo-wrapper">
+            <button
+              id="docs-sidebar-toggler"
+              class="docs-sidebar-toggler docs-sidebar-visible mr-2 d-xl-none"
+              type="button"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="site-logo">
+              <a class="navbar-brand" href="/"
+                ><img
+                  class="logo-icon mr-2"
+                  src="/assets/images/minijoshua-logo-64x64.png"
+                  alt="logo"
+                  width="50px"
+                  height="50px"
+                /><span class="logo-text"
+                  >Mini<span class="text-alt">Joshua</span></span
+                ></a
+              >
+            </div>
+          </div>
+          <!--//docs-logo-wrapper-->
+          <div
+            class="docs-top-utilities d-flex justify-content-end align-items-center"
+          >
+            <ul
+              class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex"
+            >
+              <li class="list-inline-item">
+                <a href="https://github.com/JoshuaLovesCode/MiniJoshua"
+                  ><i class="fab fa-github fa-fw"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://twitter.com/MiniJoshuaBot"
+                  ><i class="fab fa-twitter fa-fw"></i
+                ></a>
+              </li>
+            </ul>
+            <!--//social-list-->
+            <a href="#ComingSoon!" class="btn btn-primary d-none d-lg-flex"
+              >Invite Coming Soon</a
+            >
+          </div>
+          <!--//docs-top-utilities-->
+        </div>
+        <!--//container-->
+      </div>
+      <!--//branding-->
+    </header>
+    <!--//header-->
 
     <div class="docs-wrapper">
-	    <div id="docs-sidebar" class="docs-sidebar">
-		    <div class="top-search-box d-lg-none p-3">
-                <form class="search-form">
-		            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
-		            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
-		        </form>
-            </div>
-		    <nav id="docs-nav" class="docs-nav navbar">
-			    <ul class="section-items list-unstyled nav flex-column pb-3">
-				    <li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span class="theme-icon-holder mr-2"><i class="fas fa-map-signs"></i></span>Getting Started</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">Inviting</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">Setting Up</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3">The Basics</a></li>
-				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span class="theme-icon-holder mr-2"><i class="fas fa-tools"></i></span>Commands</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-1">Basic Commands</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-2">Fun Commands</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-3">Moderation Commands</a></li>
-				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder mr-2"><i class="fas fa-heart"></i></span>Credits</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-1">Lead Developers</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-2">Contributors</a></li>
-			    </ul>
+      <div id="docs-sidebar" class="docs-sidebar">
+        <div class="top-search-box d-lg-none p-3">
+          <form class="search-form">
+            <input
+              type="text"
+              placeholder="Search the docs..."
+              name="search"
+              class="form-control search-input"
+            />
+            <button type="submit" class="btn search-btn" value="Search">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+        <nav id="docs-nav" class="docs-nav navbar">
+          <ul class="section-items list-unstyled nav flex-column pb-3">
+            <li class="nav-item section-title">
+              <a class="nav-link scrollto active" href="#section-1"
+                ><span class="theme-icon-holder mr-2"
+                  ><i class="fas fa-map-signs"></i></span
+                >Getting Started</a
+              >
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-1-1">Inviting</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-1-2">Setting Up</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-1-3">The Basics</a>
+            </li>
+            <li class="nav-item section-title mt-3">
+              <a class="nav-link scrollto" href="#section-2"
+                ><span class="theme-icon-holder mr-2"
+                  ><i class="fas fa-tools"></i></span
+                >Commands</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-2-1">Basic Commands</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-2-2">Ticket Commands</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-2-3">Fun Commands</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-2-4"
+                >Moderation Commands</a
+              >
+            </li>
+            <li class="nav-item section-title mt-3">
+              <a class="nav-link scrollto" href="#section-3"
+                ><span class="theme-icon-holder mr-2"
+                  ><i class="fas fa-heart"></i></span
+                >Credits</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-3-2">Contributors</a>
+            </li>
+          </ul>
+        </nav>
+        <!--//docs-nav-->
+      </div>
+      <!--//docs-sidebar-->
+      <div class="docs-content">
+        <div class="container">
+          <article class="docs-article" id="section-1">
+            <header class="docs-header">
+              <h1 class="docs-heading">
+                Getting Started
+                <span class="docs-time">Last updated: 2020-04-12</span>
+              </h1>
+              <section class="docs-intro">
+                <p>
+                  This will cover the basics of <strong>Mini</strong>Joshua.
+                </p>
+              </section>
+              <!--//docs-intro-->
+              <br /><br />
+            </header>
+            <section class="docs-section" id="item-1-3">
+              <h2 class="section-heading">The Basics</h2>
+              <p>
+                Run the command, !!prefix to see the guild's current prefix.
+              </p>
+            </section>
+            <!--//section-->
+          </article>
 
-		    </nav><!--//docs-nav-->
-	    </div><!--//docs-sidebar-->
-	    <div class="docs-content">
-		    <div class="container">
-			    <article class="docs-article" id="section-1">
-				    <header class="docs-header">
-					    <h1 class="docs-heading">Getting Started <span class="docs-time">Last updated: 2020-01-12</span></h1>
-					    <section class="docs-intro">
-						    <p>This will cover inviting <strong>Mini</strong>Joshua, Setting up <strong>Mini</strong>Joshua and The Basics.</p>
-						</section><!--//docs-intro-->
-            <br><br><br><br>
+          <article class="docs-article" id="section-2">
+            <header class="docs-header">
+              <h1 class="docs-heading">Commands</h1>
+              <section class="docs-intro">
+                <p><strong>Mini</strong>Joshua's Commands.</p>
+                <p>(): Required</p>
+                <p>[] : Optional</p>
+              </section>
+              <!--//docs-intro-->
+            </header>
+            <section class="docs-section" id="item-2-1">
+              <h2 class="section-heading">Basic Commands</h2>
+              <div class="table-responsive my-4">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Command</th>
+                      <th scope="col">Usage</th>
+                      <th scope="col">Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">docs</th>
+                      <td>!!docs [Plugin#Document]</td>
+                      <td>
+                        Shows you the documents of JoshuaLovesCode's plugins.
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">donate</th>
+                      <td>!!donate</td>
+                      <td>
+                        Shows you a link where you can donate.
+                      </td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                      <th scope="row">help</th>
+                      <td>!!help [command]</td>
+                      <td>
+                        Displays the commands accesible to you.
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">info</th>
+                      <td>!!info</td>
+                      <td>Displays the bots current info.</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">npm</th>
+                      <td>!!npm &lt;package&gt;</td>
+                      <td>
+                        Displays information about a certain node-package.
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">partners</th>
+                      <td>!!partners</td>
+                      <td>Shows the partners of JoshuaLovesCode</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">patrons</th>
+                      <td>!!patrons</td>
+                      <td>Shows JoshuaLovesCode's patreons</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">rules</th>
+                      <td>!!rules</td>
+                      <td>
+                        Displays the current rules for JoshuaLovesCode's Discord
+                        Server.
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">spigot</th>
+                      <td>!!spigot &lt;plugin/user&gt; &lt;name/id&gt;</td>
+                      <td>
+                        Gets a plugin or author's information from SpigotMC
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--//table-responsive-->
+            </section>
+            <!--//section-->
+            <section class="docs-section" id="item-2-2">
+              <h2 class="section-heading">Ticket Commands</h2>
+              <p>
+                To create a ticket, react to the message in #tickets on discord.
+              </p>
+              <div class="table-responsive my-4">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Command</th>
+                      <th scope="col">Usage</th>
+                      <th scope="col">Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">add</th>
+                      <td>!!add &lt;username&gt;</td>
+                      <td>Adds a user to the ticket</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">remove</th>
+                      <td>!!remove &lt;username&gt;</td>
+                      <td>Removes a user from the ticket</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">close</th>
+                      <td>!!close</td>
+                      <td>Closes the ticket, with a confirmation</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--//table-responsive-->
+            </section>
+            <!--//section-->
 
-				    </header>
-				    <section class="docs-section" id="item-1-1">
-						<h2 class="section-heading">Inviting the Bot</h2>
-						<p>To invite the bot click the "Add to Discord" button in the top right corner.</p>
-						<p>You should then see a prompt where you need to select which server to add the bot to.</p>
-            <p>After you have approved and added the bot you should see it in your discord server.</p>
-					</section><!--//section-->
-
-					<section class="docs-section" id="item-1-2">
-						<h2 class="section-heading">Setting up</h2>
-						<p>Coming soon.</p>
-					</section><!--//section-->
-
-					<section class="docs-section" id="item-1-3">
-						<h2 class="section-heading">The Basics</h2>
-						<p>Coming Soon.</p>
-					</section><!--//section-->
-
-			    </article>
-
-			    <article class="docs-article" id="section-2">
-				    <header class="docs-header">
-					    <h1 class="docs-heading">Commands</h1>
-					    <section class="docs-intro">
-						    <p><strong>Mini</strong>Joshua's Commands.</p>
-                <p>(name) : Required</p>
-                <p>{name} : Optional</p>
-						</section><!--//docs-intro-->
-          </header><br><br><br><br>
-				     <section class="docs-section" id="item-2-1">
-						<h2 class="section-heading">Basic Commands</h2>
-						<p><strong>Mini</strong>Joshua's Basic Commands.</p>
-            <div class="table-responsive my-4">
-							<table class="table table-striped">
-								<thead>
-									<tr>
-										<th scope="col">Command</th>
-										<th scope="col">Usage</th>
+            <section class="docs-section" id="item-2-3">
+              <h2 class="section-heading">Fun Commands</h2>
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">Command</th>
+                    <th scope="col">Usage</th>
                     <th scope="col">Description</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<th scope="row">avatar</th>
-										<td>{prefix}avatar (@Username)</td>
-                    <td>Gets your/someone's avatar.</td>
-									</tr>
-									<tr>
-										<th scope="row">ping</th>
-										<td>{prefix}ping</td>
-                    <td>Gets the bot's ping.</td>
-									</tr>
-								</tbody>
-							</table>
-						</div><!--//table-responsive-->
-					</section><!--//section-->
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">8ball</th>
+                    <td>!!8ball &lt;question&gt;</td>
+                    <td>Shake a magic 8 ball to see your luck.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">coinflip</th>
+                    <td>!!coinflip</td>
+                    <td>Toss a coin that lands on heads or tails.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">dice</th>
+                    <td>!!dice [amount of dice]</td>
+                    <td>
+                      Rolls some dice. By default, it rolls 1x 6 sided dice.
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">level</th>
+                    <td>!!level [user]</td>
+                    <td>
+                      Display's your XP and level. Get more by chatting.
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">meme</th>
+                    <td>!!meme [subreddit]</td>
+                    <td>
+                      Shows you top quality memes, even from a subreddit of your
+                      desire.
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">rockpaperscissors</th>
+                    <td>!!rps</td>
+                    <td>
+                      Play a game of rock paper scissors against the bot.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+            <!--//section-->
 
-					<section class="docs-section" id="item-2-2">
-						<h2 class="section-heading">Fun Commands</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section><!--//section-->
+            <section class="docs-section" id="item-2-4">
+              <h2 class="section-heading">Moderation Commands</h2>
+              <p>
+                If you are a moderator on JoshuaLovesCode, check the pinned
+                messages in #mod-chat for a link to the moderation section.
+              </p>
+            </section>
+            <!--//section-->
+          </article>
+          <!--//docs-article-->
 
-					<section class="docs-section" id="item-2-3">
-						<h2 class="section-heading">Moderation Commands</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section><!--//section-->
-			    </article><!--//docs-article-->
+          <article class="docs-article" id="section-3">
+            <header class="docs-header">
+              <h1 class="docs-heading">Credits</h1>
+              <section class="docs-intro">
+                <p>
+                  Everyone who helped with MiniJoshua
+                </p>
+              </section>
+              <!--//docs-intro-->
+            </header>
 
+            <!--//section-->
 
-			    <article class="docs-article" id="section-3">
-				    <header class="docs-header">
-					    <h1 class="docs-heading">Credits</h1>
-					    <section class="docs-intro">
-						    <p><strong>Mini</strong>Joshua's Lead Developers, Contributors and everyone else that has helped.</p>
-						</section><!--//docs-intro-->
-				    </header>
-				     <section class="docs-section" id="item-3-1">
-						<h2 class="section-heading">Lead Developers</h2>
-						<h5><strong>Joshua Sing</strong>: Lead Developer, Creator</h5>
-					</section><!--//section-->
+            <section class="docs-section" id="item-3-2">
+              <h2 class="section-heading">Contributors</h2>
+              <ul>
+                <li><strong>JoshuaLovesCode</strong> - Joshua Sing</li>
+                <li><strong>mnewt00</strong> - Myles Newton</li>
+                <li><strong>DemonMildzz</strong> - Isaiah Swaim</li>
+                <li><strong>1vomarek1</strong> - Marek Vospěl</li>
+              </ul>
+            </section>
+            <!--//section-->
 
-					<section class="docs-section" id="item-3-2">
-						<h2 class="section-heading">Contributors</h2>
-						<h5>None yet :(</h5>
-					</section><!--//section-->
+            <section class="docs-section" id="item-3-3">
+              <h2 class="section-heading">Everyone else that has helped</h2>
+              <h5><strong>lohcy#7391</strong>: Created Profile Picture.</h5>
+            </section>
+            <!--//section-->
+          </article>
+          <!--//docs-article-->
 
-					<section class="docs-section" id="item-3-3">
-						<h2 class="section-heading">Everyone else that has helped</h2>
-						<h5><strong>lohcy#7391</strong>: Created Profile Picture.</h5>
-					</section><!--//section-->
-			    </article><!--//docs-article-->
-
-			    <footer class="footer">
-				    <div class="container text-center py-5">
-              <small style="font-size: 15px;">MiniJoshua - Copyright 2019 Joshua Sing | All rights reserved</small><br>
-              <small>MiniJoshua is a trademark of Joshua Sing. | We are not in any way affiliated with Discord.</small><br><br>
-              <small class="copyright" style="font-size: 10px;">Website Designed with <i class="fas fa-heart" style="color: #fb866a;"></i> by <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
-				        <ul class="social-list list-unstyled pt-4 mb-0">
-						    <li class="list-inline-item"><a href="https://github.com/JoshuaLovesCode/MiniJoshua"><i class="fab fa-github fa-fw"></i></a></li>
-				            <li class="list-inline-item"><a href="https://twitter.com/MiniJoshuaBot"><i class="fab fa-twitter fa-fw"></i></a></li>
-				        </ul><!--//social-list-->
-				    </div>
-			    </footer>
-		    </div>
-	    </div>
-    </div><!--//docs-wrapper-->
-
-
+          <footer class="footer">
+            <div class="container text-center py-5">
+              <small
+                >Copyright &copy; 2020 | Joshua Sing, Myles Newton, Isaiah
+                Swaim, Marek Vospěl | All rights reserved</small
+              ><br />
+              <small
+                >We are not affiliated, associated, authorized, endorsed by, or
+                in any way officially connected Discord Inc.</small
+              ><br /><br />
+              <small class="copyright" style="font-size: 10px;"
+                >Website Designed with
+                <i class="fas fa-heart" style="color: #fb866a;"></i> by
+                <a
+                  class="theme-link"
+                  href="http://themes.3rdwavemedia.com"
+                  target="_blank"
+                  >Xiaoying Riley</a
+                >
+                for developers</small
+              >
+              <ul class="social-list list-unstyled pt-4 mb-0">
+                <li class="list-inline-item">
+                  <a href="https://github.com/JoshuaLovesCode/MiniJoshua"
+                    ><i class="fab fa-github fa-fw"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://twitter.com/MiniJoshuaBot"
+                    ><i class="fab fa-twitter fa-fw"></i
+                  ></a>
+                </li>
+              </ul>
+              <!--//social-list-->
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <!--//docs-wrapper-->
 
     <!-- Javascript -->
     <script src="/assets/plugins/jquery-3.4.1.min.js"></script>
     <script src="/assets/plugins/popper.min.js"></script>
     <script src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-
 
     <!-- Page Specific JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
@@ -205,6 +461,5 @@
     <script src="/assets/plugins/jquery.scrollTo.min.js"></script>
     <script src="/assets/plugins/lightbox/dist/ekko-lightbox.min.js"></script>
     <script src="/assets/js/docs.js"></script>
-
-</body>
+  </body>
 </html>
